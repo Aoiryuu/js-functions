@@ -26,7 +26,10 @@ console.log(testGreeting); // printing the output value of the function.
  *
  * These two variables will be used to invoke the functions #2 - #5.
 */ 
-
+	var bango1 = 1 ;
+	var bango2 = 2;
+	console.log(bango1)
+	console.log(bango2)
 
 
 /*
@@ -43,7 +46,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Invoke the function and assign it to a variable named `sum`.
  * Console.log `sum` to test your code.
 */
-
+	function add(num1,num2){
+		return(num1+num2);
+	}
+	var sum = add(45,45);
+	console.log(sum)
 
 
 /*
@@ -59,8 +66,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Invoke the function and assign it to a variable named `difference`.
  * Console.log `difference` to test your code.
 */ 
-
-
+	function subtract(num1,num2){
+		return(num1-num2);
+	}
+	var difference = subtract(100,37);
+	console.log(difference)
 
 /*
  * #4
@@ -75,8 +85,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Invoke the function and assign it to a variable named `product`.
  * Console.log `product` to test your code.
 */
-
-
+	function multiply(num1,num2){
+		return(num1*num2);
+	}
+	var product = multiply(9,10);
+	console.log(product)
 
 /*
  * #5
@@ -91,9 +104,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Invoke the function and assign it to a variable named `quotient`.
  * Console.log `quotient` to test your code.
 */
-
-
-
+	function divide(num1,num2){
+		return(num1/num2);
+	}
+	var quotient = divide(99,9);
+	console.log(quotient)
 /*
  * #6
  * Function - checkSum
@@ -105,7 +120,11 @@ console.log(testGreeting); // printing the output value of the function.
  * This function will return the string "Mariah Carey has been married `x` amount of times." Where `x` is the value when you invoke the function. Invoke this function using the variable `sum`. 
  * Console.log your result.
 */
-
+	function checksum(x){
+		return"Mariah Carey has been married "+ x +" amount of times.";
+	}
+	var checksum = checksum(sum);
+	console.log(checksum)
 
 
 /*
@@ -119,8 +138,11 @@ console.log(testGreeting); // printing the output value of the function.
  * This function will return the string "Last night I dreamt that I ate `x` Taco Bell soft tacos."  Where `x` is the value when you invoke the function. Invoke this function using the variable `difference`.
  * Console.log your results.
 */ 
-
-
+	function checkdifference(x){
+		return"Last night I dreamt that I ate "+ x +" Taco Bell soft tacos.";
+	}
+	var checkdifference = checkdifference(difference);
+	console.log(checkdifference)
 
 /*
  * #8
@@ -132,8 +154,11 @@ console.log(testGreeting); // printing the output value of the function.
  * This function will multiply the values stored in the sum and product variables.
  * Console.log your result.  
 */
-
-
+	function checkProduct(){
+		return(sum*product);
+	}
+	var checkProduct = checkProduct();
+	console.log(checkProduct)
 
 /*
  * #9
@@ -145,7 +170,11 @@ console.log(testGreeting); // printing the output value of the function.
  * This function will multiply the values stored in the product and quotient variables.
  * Console.log your result.  
 */
-
+	function checkQuotient(){
+		return(product*quotient);
+	}
+	var checkQuotient = checkQuotient();
+	console.log(checkQuotient)
 
 
 /*
@@ -168,7 +197,15 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your result.
 */ 
 
-
+	var bango3 = 7;
+	var bango4 = 9;
+	var bango5 = 11;
+	console.log(bango3,bango4,bango5)
+	function addThenSubtract(num1,num2,num3){
+		return(num1+num2-num3);
+	}
+	var addThenSubtract = addThenSubtract(9,8,7);
+	console.log(addThenSubtract)
 
 /*
  * #11
@@ -183,8 +220,11 @@ console.log(testGreeting); // printing the output value of the function.
  * This function will multiply the first two parameters together. Then with the product of that operation, divide it from the third parameter. PLEASE USE YOUR PREVIOUS FUNCTIONS FOR THIS EXERCISE. 
  * Console.log your result.
 */ 
-
-
+	function multiplyThenDivide(num1,num2,num3){
+		return(num1*num2/num3);
+	}
+	var multiplyThenDivide = multiplyThenDivide(45,10,5);
+	console.log(multiplyThenDivide)
 
 /*
  * #12
@@ -197,7 +237,12 @@ console.log(testGreeting); // printing the output value of the function.
  *
  *  This function `returns` back a string which represents someone's full name. Invoke this function by passing in your first  and last name into the function. Store the return value into a variable named `myFullName` and console.log this variable to show your result.
 */
-
+	function createFullName(firstname,lastname ){
+		return firstname+" "+ lastname;
+	}
+	var myfullname = createFullName("Jordan","Muraoka");
+	console.log(myfullname);
+	
 
 
 /*
