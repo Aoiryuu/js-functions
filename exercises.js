@@ -276,9 +276,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Create a function that will take in a parameter named `inches`. This function will convert inches to centimeters(cm).
  * Console.log your result. 
 */
-
-
-
+	function shoeSize(inches) {
+		return inches*2.54;
+	}
+	
+	console.log(shoeSize(12));
 
 /*
  * #15
@@ -301,8 +303,10 @@ console.log(allCaps("Turn this sentence into all caps!"));
  * This function will capitalize only the first letter in the variable phase above. 
  * Console.log your result.
 */
-
-
+	function oneCap(str) {
+		return str[0].toUpperCase() + str.substr(1);
+	}
+console.log(oneCap("first letter should be capped"));
 
 /*
  * #17
